@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_margin="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passport Photo Studio"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintTop_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make your perfect passport photo in seconds"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintTop_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnTake"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Take a New Photo"
+        app:layout_constraintTop_toBottomOf="@id/tagline"
+        app:layout_constraintTop_margin="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Choose from Gallery"
+        app:layout_constraintTop_toBottomOf="@id/btnTake"
+        app:layout_constraintTop_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Continue to Edit"
+        app:layout_constraintTop_toBottomOf="@id/btnGallery"
+        app:layout_constraintTop_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@android:drawable/ic_menu_manage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_margin="16dp"
+        app:layout_constraintEnd_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
